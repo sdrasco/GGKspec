@@ -1,5 +1,6 @@
 function H = ObserveSnapshot(snapshot,theta_deg)
 %
+% There is a better routine in Serieshphx
 %
 % Steve Drasco
 %

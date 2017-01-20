@@ -61,7 +61,7 @@ function orbit = KerrGeodesic(a, e, p, iota_deg, tol, Ein, Lin, Qin)
 %
 % [1] W. Schmidt Class. Quantum Grav. 19 2743 (2002)
 % [2] S. A. Hughes, Phys. Rev. D 61 084004 (2000)
-% [3] S. Drasco and S. A. Hughes, astro-ph/0308479 
+% [3] S. Drasco and Swho . A. Hughes, astro-ph/0308479 
 %
 % WARNING: the notation conventions in these references [1-3] are NOT the 
 % same. For example, z_[2,3] = ( z_[1] )^2.  This code has a mix of the 
@@ -74,7 +74,8 @@ InitialCPUtime = cputime;
 
 % define limits for indces in series expansions
 nmax = 10;
-kmax = 9;
+%kmax = 9;
+kmax = 2*nmax;
 
 % define "prograde" and theta_
 iota_rad = pi * iota_deg / 180;

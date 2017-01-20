@@ -60,6 +60,14 @@ h.quad.xz.coefs = 2 * h.quad.xz.coefs;
 h.quad.yz = ddIyz;
 h.quad.yz.coefs = 2 * h.quad.yz.coefs;
 
+% time derivatives of quadrupole term (dh/dt)
+h.quad.dxx = SeriesDifferentiate(h.quad.xx);
+h.quad.dyy = SeriesDifferentiate(h.quad.yy);
+h.quad.dzz = SeriesDifferentiate(h.quad.zz);
+h.quad.dxy = SeriesDifferentiate(h.quad.xy);
+h.quad.dxz = SeriesDifferentiate(h.quad.xz);
+h.quad.dyz = SeriesDifferentiate(h.quad.yz);
+
 if nargin > 1 % WARNING: doesn't pass tests
     
     % coordinate derivatives

@@ -74,8 +74,8 @@ InitialCPUtime = cputime;
 
 % define limits for indces in series expansions
 nmax = 10;
-%kmax = 9;
-kmax = 2*nmax;
+kmax = 20;
+%kmax = 2*nmax;
 
 % define "prograde" and theta_
 iota_rad = pi * iota_deg / 180;

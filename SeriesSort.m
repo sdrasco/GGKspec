@@ -8,6 +8,7 @@ function sout = SeriesSort(sin)
 % imaginary parts individually because otherwise sortrows will sort in
 % order of increasing absolute value
 w = sin.mkn * sin.freqs;
+
 M = [sin.mkn real(sin.coefs) imag(sin.coefs) w];
 
 % sort the master matrix rows in order of incresing fifth-column-elements
